@@ -9,7 +9,6 @@ const contact_service_1 = require("../services/contact.service");
 const contactPost = async (req, res) => {
     try {
         const { name, email, message, designation, companyname, service } = req.body;
-        console.log({ name, email, message, designation, companyname, service });
         const mailDetails = {
             name, email, message, designation, companyname, service,
             subject: "Message",
